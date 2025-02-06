@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.paid{
+    @apply bg-green-200 text-green-700 py-0.5 px-2 rounded text-sm;
+}
+
+.draft{
+    @apply bg-gray-200 text-gray-700 py-0.5 px-2 rounded text-sm;
+}
+
+.outstanding{
+    @apply bg-gray-200 text-gray-700 py-0.5 px-2 rounded text-sm;
+}
+
+.past_due{
+    @apply bg-rose-200 text-rose-700 py-0.5 px-2 rounded text-sm;
+}
+
+.dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    right: 10px;
+    border-bottom: 9px solid #e5e7eb;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+}
+
+.dropdown-menu::after {
+    content: "";
+    position: absolute;
+    top: -7.5px;
+    right: 10px;
+    border-bottom: 9px solid white;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+}
