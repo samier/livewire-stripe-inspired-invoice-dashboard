@@ -1,5 +1,5 @@
-<div class="border rounded-md absolute bg-white right-0 w-44 z-10 dropdown shadow-md dropdown-menu">
-      
+{{-- Table Action Dropdown --}}
+<div class="border rounded-md absolute bg-white right-0 w-44 z-50 dropdown shadow-md dropdown-menu">
     <div class="flex flex-col space-y-1  items-start text-base">
         <div class="flex flex-col items-start space-y-1 p-2">
             <p class="text-slate-500 m-0 p-0 ">Actions</p>
@@ -13,3 +13,4 @@
         </div>
     </div>
 </div>
+{{-- End     Table Action Dropdown --}}

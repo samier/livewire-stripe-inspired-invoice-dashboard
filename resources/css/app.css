@@ -18,6 +18,36 @@
     @apply bg-rose-200 text-rose-700 py-0.5 px-2 rounded text-sm;
 }
 
+table tr:nth-last-child(-n+4) td:last-child .dropdown-menu {
+    @apply -top-[170px];
+}
+
+table tr:nth-last-child(-n+4) td:last-child .dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: unset !important;
+    bottom: -9px !important;
+    right: 10px;
+    border-bottom: 9px solid #e5e7eb;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    rotate: 180deg;
+}
+
+table tr:nth-last-child(-n+4) td:last-child .dropdown-menu::after {
+    content: "";
+    position: absolute;
+    top: unset !important;
+    bottom: -7.5px !important;
+    right: 10px;
+    border-bottom: 9px solid white;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    rotate: 180deg;
+
+}
+
+
 .dropdown-menu::before {
     content: "";
     position: absolute;

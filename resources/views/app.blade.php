@@ -24,5 +24,6 @@
 
         
        @livewireScripts
+       @yield('javascript')
     </body>
 </html>

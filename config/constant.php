@@ -11,7 +11,6 @@ return [
         ['name' => 'Paid', 'value' => 'paid'],
     ],
 
-
     'invoices' => [
         ['id' => '1', 'amount' => '10.00', 'invoice_number' => '8FB2578-001', 'customer_email' => 'jhon@example.com', 'status' => 'draft', 'created_date' => Carbon::now()->subDays(1)],
         ['id' => '2', 'amount' => '8.00', 'invoice_number' => '8FB2578-005', 'customer_email' => 'peter@example.com', 'status' => 'paid', 'created_date' => Carbon::now()->subDays(5)],
