@@ -52,11 +52,11 @@
 
     {{-- Invoice Table --}}
     <div class="flex-auto block py-8 pt-6 ">
-        <div class="overflow-x-auto">
+        <div class="overflow-x-auto pb-44">
           <table class="w-full my-0 align-middle text-dark border-neutral-200">
             <thead class="align-bottom">
               <tr class="font-semibold text-sm border-b text-slate-700 uppercase">
-                <th class="pb-3 text-start min-w-28 md:w-auto" colspan="2">Amount </th>
+                <th class="pb-3 text-start min-w-28 md:w-auto cursor-pointer" colspan="2">Amount </th>
                 <th class="pb-3 text-start min-w-40 md:min-w-1">Invoice Number</th>
                 <th class="pb-3 text-start min-w-52 md:w-auto">Customer Email</th>
                 <th class="pb-3 text-start min-w-32 md:w-auto">Status</th>
