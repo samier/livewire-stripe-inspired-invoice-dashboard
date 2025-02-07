@@ -84,13 +84,13 @@
 
     {{-- Invoice Table --}}
     <div class="flex-auto block py-8 pt-6 ">
-        <div class="overflow-x-auto pb-44">
+        <div class="overflow-x-auto pb-52">
           <table class="w-full my-0 align-middle text-dark border-neutral-200">
             <thead class="align-bottom">
               <tr class="font-semibold text-sm border-b text-slate-700 uppercase">
-                <th class="pb-3 text-start min-w-40 md:w-auto cursor-pointer" colspan="2">Amount </th>
-                <th class="pb-3 text-start min-w-40 md:min-w-1">Invoice Number</th>
-                <th class="pb-3 text-start min-w-52 md:w-auto">
+                <th class="pb-3 text-start min-w-40 md:w-[10%] cursor-pointer" colspan="2">Amount </th>
+                <th class="pb-3 text-start min-w-40 md:w-[10%]">Invoice Number</th>
+                <th class="pb-3 text-start min-w-52 md:w-[70%]">
                     <div class="flex space-x-1">
                         <span>Customer Email</span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-[18px] text-slate-500 cursor-pointer">
@@ -99,16 +99,16 @@
                           
                     </div>
                 </th>
-                <th class="pb-3 text-start min-w-32 md:w-auto">Status</th>
-                <th class="pb-3 text-start min-w-16">Due</th>
-                <th class="pb-3 text-start min-w-52" colspan="2">Created Date</th>
+                <th class="pb-3 text-start min-w-32 md:w-[10%]">Status</th>
+                <th class="pb-3 text-start min-w-16 md:w-[10%]">Due</th>
+                <th class="pb-3 text-start min-w-52 md:w-auto" colspan="2">Created Date</th>
               </tr>
             </thead>
             <tbody class="text-slate-600 text-base space-y-2 font-medium">
                 @if (count($invoices) > 0)
                 @foreach ($invoices as $item)
                     <tr class="border-b last:border-b-0">
-                        <td class="py-2 text-end w-[10px]">${{$item['amount']}}</td>
+                        <td class="py-2 text-end w-[10px] {{$item['status'] == 'paid' ? 'font-bold' : 'font-thin'}}">${{$item['amount']}}</td>
                         <td class="py-2 text-center text-slate-500 w-28">
                             <div class="flex">
                                 <span class="flex-1">USD</span> 
