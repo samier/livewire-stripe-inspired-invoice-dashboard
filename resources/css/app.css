@@ -22,7 +22,7 @@
     content: "";
     position: absolute;
     top: -9px;
-    right: 10px;
+    right: 11px;
     border-bottom: 9px solid #e5e7eb;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
@@ -32,7 +32,7 @@
     content: "";
     position: absolute;
     top: -7.5px;
-    right: 10px;
+    right: 11px;
     border-bottom: 9px solid white;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
